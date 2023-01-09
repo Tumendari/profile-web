@@ -25,10 +25,10 @@ export default function Profile() {
         {/* First profile cart */}
         <div className="z-10 w-56 h-72 bg-slate-50 bg-opacity-20 backdrop-blur-md rounded-lg flex flex-col items-center border border-slate-50/40">
           <div className="border-slate-50/40 border-2 bg-slate-50 bg-opacity-50 backdrop-blur-md w-20 h-20 rounded-full mt-4 items-center justify-center flex">
-            <img src="women.jfif" className=" w-16 h-16 rounded-full" />
+            <img src="wo.jpg" className=" w-16 h-16 rounded-full" />
           </div>
-          <h1 className=" font-bold text-slate-50">Uguumur O.</h1>
-          <div className=" text-sm text-slate-50">Teacher</div>
+          <h1 className=" font-bold text-slate-50">图门达日</h1>
+          <div className=" text-sm text-slate-50">中文老师</div>
           <div className="w-full flex justify-center gap-1 mt-6">
             <div className="w-8 h-8 rounded-full bg-slate-20 bg-opacity-50 backdrop-blur-md border-slate-50 border flex justify-center items-center">
               <svg
@@ -105,28 +105,6 @@ export default function Profile() {
             <button className="bg-slate-50 bg-opacity-20 backdrop-blur-md rounded text-slate-50 w-[40%] py-1">
               Subscribe
             </button>
-          </div>
-        </div>
-
-        {/* Second profile cart */}
-        <div className="z-10 w-56 h-72 bg-slate-50 bg-opacity-20 backdrop-blur-md rounded-lg flex flex-col items-center border border-slate-50/40">
-          <div className="border-slate-50/40 border-2 bg-slate-50 bg-opacity-50 backdrop-blur-md w-20 h-20 rounded-full mt-4 items-center justify-center flex">
-            <img src="women.jfif" className=" w-16 h-16 rounded-full" />
-          </div>
-          <h1 className=" font-bold text-slate-50">Uguumur O.</h1>
-          <div className=" text-sm text-slate-50">Teacher</div>
-
-          <button className="text-slate-50 text-sm backdrop-blur-md border border-slate-50/20 mt-8 w-40 h-12 rounded">
-            View Profile
-          </button>
-          <div className=" relative w-full h-full flex justify-center mt-12">
-            <button className="  bg-slate-50 text-sm bg-opacity-20 backdrop-blur-md  text-slate-50 w-1/2 py-1">
-              95% <div> Rating</div>
-            </button>
-            <button className="bg-slate-50 text-sm bg-opacity-20 backdrop-blur-md  text-slate-50 w-1/2 py-1">
-              92%<div> Activity</div>
-            </button>
-            <div className=" absolute z-30 w-[1px] h-10 bg-slate-50  rounded-full top-2"></div>
           </div>
         </div>
       </div>
