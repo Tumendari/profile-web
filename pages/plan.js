@@ -6,7 +6,7 @@ export default function Home() {
           <div className="text-slate-100 text-3xl font-extrabold">T</div>
         </div>
         <div className="flex items-center justify-end gap-4"></div>
-        <div className="hidden md:block font-extrabold">Нүүр</div>
+        <div className="hidden md:block font-extrabold">Нүр</div>
         <div className="px-2 py-1 rounded text-gray-800 font-extrabold">
           Сургалт
         </div>
