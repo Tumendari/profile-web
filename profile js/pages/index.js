@@ -4,13 +4,10 @@ export default function Profile() {
     major: "中文老师",
     img: "wo.jpg",
   };
+  const rooter = {};
   return (
     <>
       <div className="h-screen w-screen bg-indigo-900 flex items-center justify-center gap-8 relative">
-        {/* <img
-          className="absolute w-screen h-screen -z-10 object-cover bg-orange-300 left-0 top-0"
-          src="background.jpg"
-        /> */}
         <div className="absolute z-0 w-24 h-24 rounded-full bg-gradient-to-tr from-orange-600 to-orange-300 top-[30%] left-[45%]"></div>
         <div className="absolute z-0 w-24 h-24 rounded-full bg-gradient-to-tr from-lime-300 to-cyan-300 top-[50%] left-[50%]"></div>
         <svg
