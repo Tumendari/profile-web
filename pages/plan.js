@@ -1,4 +1,6 @@
 export default function Home() {
+  const [data, setData] = useState([]);
+  const [count, setCount] = useState(0);
   return (
     <div className="w-screen h-full ">
       <div className="h-20 w-full bg-slate-300 flex justify-between items-center px-4">

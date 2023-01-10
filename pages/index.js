@@ -1,30 +1,22 @@
+import { useState } from "react";
+
 export default function Profile() {
   const profile = {
     fullname: "图门达日",
     major: "中文老师",
     img: "wo.jpg",
   };
+  // const Menus = {};
   const rooter = {};
+  const Menus = [
+    { name: "Message", url: "/Message" },
+    { name: "Subsribe", url: "/Subsribe" },
+  ];
+  const [data, setData] = useState([]);
+  const [count, setCount] = useState(0);
   return (
     <>
-      <div className="h-screen w-screen bg-indigo-900 flex items-center justify-center gap-8 relative">
-        <div className="absolute z-0 w-24 h-24 rounded-full bg-gradient-to-tr from-orange-600 to-orange-300 top-[30%] left-[45%]"></div>
-        <div className="absolute z-0 w-24 h-24 rounded-full bg-gradient-to-tr from-lime-300 to-cyan-300 top-[50%] left-[50%]"></div>
-        <svg
-          className="absolute left-[4%] top-[50%] w-28 h-28"
-          viewBox="0 0 10 10"
-          preserveAspectRatio="none"
-        >
-          <defs>
-            <linearGradient id="gradient">
-              <stop offset="50%" stop-color="darkorange" />
-              <stop offset="95%" stop-color="red" />
-            </linearGradient>
-          </defs>
-          <polygon fill="url(#gradient)" points="0 0 10 0 0 10" />
-        </svg>
-
-        {/* First profile cart */}
+      <div className="h-screen w-screen bg-purple-400 flex items-center justify-center gap-8 relative">
         <div className="z-10 w-56 h-72 bg-slate-50 bg-opacity-20 backdrop-blur-md rounded-lg flex flex-col items-center border border-slate-50/40">
           <div className="border-slate-50/40 border-2 bg-slate-50 bg-opacity-50 backdrop-blur-md w-20 h-20 rounded-full mt-4 items-center justify-center flex">
             <img
@@ -32,8 +24,8 @@ export default function Profile() {
               className=" w-16 h-16 rounded-full object-cover"
             />
           </div>
-          <h1 className=" font-bold text-slate-50">{profile.fullname}</h1>
-          <div className=" text-sm text-slate-50">{profile.major}</div>
+          <h1 className=" font-bold text-black">{profile.fullname}</h1>
+          <div className=" text-sm text-black">{profile.major}</div>
           <div className="w-full flex justify-center gap-1 mt-6">
             <div className="w-8 h-8 rounded-full bg-slate-20 bg-opacity-50 backdrop-blur-md border-slate-50 border flex justify-center items-center">
               <svg
@@ -104,12 +96,19 @@ export default function Profile() {
             </div>
           </div>
           <div className="w-full flex justify-center gap-1 mt-8">
-            <button className="bg-slate-50 bg-opacity-20 backdrop-blur-md rounded text-slate-50 w-[40%] py-1">
-              Message
-            </button>
-            <button className="bg-slate-50 bg-opacity-20 backdrop-blur-md rounded text-slate-50 w-[40%] py-1">
-              Subscribe
-            </button>
+            {Menus.map((row, i) => (
+              <a
+                href={row.url}
+                key={i}
+                className="bg-slate-50 bg-opacity-20 backdrop-blur-md rounded text-slate-50 w-[40%] py-1 flex justify-center"
+              >
+                {row.name}
+              </a>
+            ))}
+
+            {/* <button className="bg-slate-50 bg-opacity-20 backdrop-blur-md rounded text-slate-50 w-[40%] py-1">
+              {Menus.name}
+            </button> */}
           </div>
         </div>
       </div>
