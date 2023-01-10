@@ -9,15 +9,15 @@ export default function Profile() {
   // const Menus = {};
   const rooter = {};
   const Menus = [
-    { name: "Message", url: "/Message" },
-    { name: "Subsribe", url: "/Subsribe" },
+    { name: "发信息", url: "/发信息" },
+    { name: "关注", url: "/关注" },
   ];
   const [data, setData] = useState([]);
   const [count, setCount] = useState(0);
   return (
     <>
       <div className="h-screen w-screen bg-purple-400 flex items-center justify-center gap-8 relative">
-        <div className="z-10 w-56 h-72 bg-slate-50 bg-opacity-20 backdrop-blur-md rounded-lg flex flex-col items-center border border-slate-50/40">
+        <div className="z-10 w-1/4 h-2/3 bg-slate-50 bg-opacity-20 backdrop-blur-md rounded-lg flex flex-col items-center border border-slate-50/40">
           <div className="border-slate-50/40 border-2 bg-slate-50 bg-opacity-50 backdrop-blur-md w-20 h-20 rounded-full mt-4 items-center justify-center flex">
             <img
               src={profile.img}
@@ -100,7 +100,7 @@ export default function Profile() {
               <a
                 href={row.url}
                 key={i}
-                className="bg-slate-50 bg-opacity-20 backdrop-blur-md rounded text-slate-50 w-[40%] py-1 flex justify-center"
+                className="bg-slate-50 bg-opacity-20 backdrop-blur-md rounded text-dark w-[40%] py-1 flex justify-center"
               >
                 {row.name}
               </a>
