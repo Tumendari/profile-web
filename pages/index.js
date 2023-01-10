@@ -1,4 +1,4 @@
-export default function Home() {
+export default function Profile() {
   return (
     <>
       <div className=" text-rose-500">Hello World</div>
